@@ -12,8 +12,8 @@ def hello():
 @app.route("/Secret")
 def secret():
     client = secretmanager.SecretManagerServiceClient()
-    name = f"projects/banded-edge-363320/secrets/pwujczyk/versions/1"
-    r=client.access_secret_version(request={"name":"secretkey"})
+    name = "projects/17710308926/secrets/pwsecret/versions/1"
+    r=client.access_secret_version(request={"name":name})
     return r
 
 # Press the green button in the gutter to run the script.
