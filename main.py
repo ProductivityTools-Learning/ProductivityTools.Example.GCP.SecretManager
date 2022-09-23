@@ -14,7 +14,7 @@ def secret():
     client = secretmanager.SecretManagerServiceClient()
     name = "projects/17710308926/secrets/pwsecret/versions/1"
     r=client.access_secret_version(request={"name":name})
-    return r
+    return str(r);
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
