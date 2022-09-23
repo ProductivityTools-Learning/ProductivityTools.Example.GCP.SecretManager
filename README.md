@@ -23,7 +23,7 @@ gcloud app deploy
 ```
 ## Tutorial
 [Link](https://cloud.google.com/secret-manager/docs/create-secret)
-
+[Enabble API](https://console.cloud.google.com/flows/enableapi?apiid=secretmanager.googleapis.com&redirect=https://console.cloud.google.com&_ga=2.84762201.1798303247.1663912530-522909522.1663443612)
 ![](Images/2022-09-22-22-17-28.png)
 
 ```

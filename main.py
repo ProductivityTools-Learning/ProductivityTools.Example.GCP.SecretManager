@@ -13,7 +13,7 @@ def hello():
 def secret():
     client = secretmanager.SecretManagerServiceClient()
     name = f"projects/banded-edge-363320/secrets/pwujczyk/versions/1"
-    r=client.access_secret_Version(request={"name":"pwsecret"})
+    r=client.access_secret_version(request={"name":"secretkey"})
     return r
 
 # Press the green button in the gutter to run the script.
