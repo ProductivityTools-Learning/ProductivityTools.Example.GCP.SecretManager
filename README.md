@@ -1,7 +1,7 @@
 <!--Category:C#,SQL--> 
  <p align="right">
     <a href="http://productivitytools.tech/productivitytools-createsqlserverdatabase/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
-    <a href="https://www.github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase"><img src="Images/Header/Github_border_40px.png" /></a>
+    <a href="https://github.com/ProductivityTools-Learning/ProductivityTools.Example.GCP.SecretManager"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
     <a href="http://http://productivitytools.tech/">
@@ -27,6 +27,21 @@ gcloud app deploy
 ![](Images/2022-09-22-22-17-28.png)
 
 ```
-echo -n "pwValue" | gcloud secrets versions add pwsecret --data-file=-
 gcloud secrets list
+echo -n "pwValue" | gcloud secrets versions add pwsecret --data-file=-
 ```
+
+If you face the error
+
+
+Add **Secret Manager Secret Accessor** for the App engine Service Account
+
+Copy Service account name
+
+![](Images/2022-09-23-08-02-54.png)
+
+Add it in the IAM 
+
+![](Images/2022-09-23-08-03-49.png)
+
+![](Images/2022-09-23-08-04-05.png)
