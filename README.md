@@ -11,7 +11,9 @@
 
 # GCP.SecretManager
 
-This is a simple python app which returns
+This is a simple python app which returns value from the Secret Manager and app is deployed as Google App Engine
+
+<!--more-->
 
 - Hello under http://127.0.0.1:8080/Hello
 - Secret under http://127.0.0.1:8080/Secret
